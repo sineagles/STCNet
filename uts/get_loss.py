@@ -1,6 +1,6 @@
 import torch.nn as nn
 import logging
-from utils.LossFunctions import BinaryFocalLoss, FocalLoss, SoftDiceLoss, BCEDiceLoss
+from uts.LossFunctions import BinaryFocalLoss, FocalLoss, SoftDiceLoss, BCEDiceLoss
 
 
 def get_loss(args):

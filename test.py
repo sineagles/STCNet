@@ -2,8 +2,8 @@ import os
 import torch
 from eval.eval import pre_test
 from torch.utils.data import DataLoader
-from utils.LossFunctions import BCEDiceLoss
-from utils.dataset import BasicDataset_for_predict
+from uts.LossFunctions import BCEDiceLoss
+from uts.dataset import BasicDataset_for_predict
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 

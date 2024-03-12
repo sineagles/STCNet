@@ -1,6 +1,6 @@
 import numpy as np
 
-from utils.prf_metrics import get_statistics
+from uts.prf_metrics import get_statistics
 
 
 def PR_Curve(pred, gt, thresh_step=0.01):

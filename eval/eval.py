@@ -4,8 +4,8 @@ from tqdm import tqdm
 from PIL import Image
 from eval.PR__curve import PR_Curve
 from eval.wirte_excel import write_PR
-from utils.prf_metrics import DIRPF
-from utils.new_metrics import *
+from uts.prf_metrics import DIRPF
+from uts.new_metrics import *
 from eval.AverageMeter import AverageMeter
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import average_precision_score

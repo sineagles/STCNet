@@ -1,4 +1,4 @@
-from utils.dataset import BasicDataset
+from uts.dataset import BasicDataset
 
 # COVID-19-CT-Seg Dataset
 covid_train_imgs_dir = r'/dataset/COVID-19-CT-Seg/train/imgs'

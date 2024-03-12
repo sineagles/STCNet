@@ -7,16 +7,16 @@ import torch
 import torch.nn as nn
 from torch import optim
 from tqdm import tqdm
-from utils.get_dataset import get_dataset
+from uts.get_dataset import get_dataset
 from network.model.stcnet import STCNet
 from tensorboardX import SummaryWriter
-from utils.dataset import setup_seed
+from uts.dataset import setup_seed
 from torch.utils.data import DataLoader
-from utils.get_loss import get_loss
+from uts.get_loss import get_loss
 from eval.eval import eval_new
 from eval.data_io import save_train_config, save_val_result, save_train_result
 from eval.AverageMeter import AverageMeter
-from utils.new_metrics import iou, dice
+from uts.new_metrics import iou, dice
 
 sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
@@ -228,9 +228,8 @@ def get_args():
                         help='The name of the model')
     parser.add_argument('-d', '--dataset', type=str, default='CC-CCII',
                         choices=['COVID-19-CT-Seg', 'CC-CCII'], help='The name of the dataset')
-    parser.add_argument('-A', '--dataAug', type=bool, default=False, help='是否进行数据增强')
-    parser.add_argument('-W', '--wave', type=bool, default=False, help='是否加入小波变换')
-    parser.add_argument('-P', '--pretrained', type=bool, default=False, help='是否使用预训练模型')
+    parser.add_argument('-A', '--dataAug', type=bool, default=False, help='Whether to perform data augmentation')
+    parser.add_argument('-W', '--wave', type=bool, default=False, help='Whether to add the wavelet transform')
 
     return parser.parse_args()
 
