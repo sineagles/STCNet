@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 '[STCNet: Alternating CNN and Improved Transformer Network for COVID-19 CT Image Segmentation](https://arxiv.org/abs/1811.0132)' submitted to ss on 12-March-2024
 
 # STCNet
