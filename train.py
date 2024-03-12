@@ -239,7 +239,7 @@ if __name__ == '__main__':
     args = get_args()
     if args.seed:
         setup_seed(args.seed)
-        print("随机种子设置为了", args.seed)
+        print("Random seed set to:", args.seed)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')
